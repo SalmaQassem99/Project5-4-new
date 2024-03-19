@@ -558,6 +558,10 @@ a {
   font-size: 3rem;
 }
 
+.link-address {
+  display: none;
+}
+
 .success-wrapper {
   width: 60%;
   z-index: 999999;

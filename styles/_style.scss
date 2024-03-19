@@ -587,6 +587,10 @@ $margin: -9.5rem;
   }
 }
 
+.link-address {
+  display: none;
+}
+
 .success-wrapper {
   width: 60%;
   @extend %fixed-position;
@@ -688,12 +692,14 @@ $margin: -9.5rem;
           transform: rotate(-1.5deg);
 
           .text-card {
-            background: linear-gradient(to bottom,
-                transparent 20%,
-                $orange-2 20% 45%,
-                transparent 45% 60%,
-                $orange-3 60% 80%,
-                transparent 80%);
+            background: linear-gradient(
+              to bottom,
+              transparent 20%,
+              $orange-2 20% 45%,
+              transparent 45% 60%,
+              $orange-3 60% 80%,
+              transparent 80%
+            );
             color: $black-1;
             font-size: 140%;
             text-transform: capitalize;
@@ -844,7 +850,6 @@ $margin: -9.5rem;
 }
 
 @keyframes rotatePhone {
-
   0%,
   10% {
     transform: rotate(0deg);

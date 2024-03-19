@@ -41,7 +41,9 @@ playButton.addEventListener("click", () => {
     cardWrapper.style.visibility = "hidden";
     scoreWrapper.style.visibility = "visible";
     score.textContent = `0/${gameImages.length}`;
-    game.style.backgroundImage = "url('../media/images/gameBackground.svg')";
+    game.style.backgroundImage = `url(${
+      document.querySelector(".game-background").textContent
+    })`;
     body.classList.add("show");
   });
 });

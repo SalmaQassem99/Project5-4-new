@@ -77,7 +77,9 @@ gameImages.forEach((image) => {
     itemAudio.addEventListener("ended", () => {
       if (counter === gameImages.length) {
         const text = document.querySelector(".text-card .score-text");
-        text.textContent = `${counter}/${gameImages.length}`;
+        const textContent = `${counter}/${gameImages.length}`;
+        text.textContent = textContent;
+        text.setAttribute("text", textContent);
         successModal.style.visibility = "visible";
         overlay.classList.add("show");
         successModal.classList.add("show");

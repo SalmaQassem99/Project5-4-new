@@ -43,7 +43,15 @@ playButton.addEventListener("click", () => {
       document.querySelector(".game-background").textContent
     })`;
     body.classList.add("show");
+    pauseButton.style.visibility = "visible";
+    soundButton.style.display = "flex";
   });
+});
+pauseButton.addEventListener("click", () => {
+  const hiddenIcon = pauseButton.querySelector("i.hide");
+  const shownIcon = pauseButton.querySelector("i:not(.hide)");
+  hiddenIcon.classList.remove("hide");
+  shownIcon.classList.add("hide");
 });
 gameImages.forEach((image) => {
   image.addEventListener("click", () => {
